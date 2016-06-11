@@ -1,1 +1,1 @@
-web: python FlaskApp/app.py
+web: python HealthScoreScraper/app.py
