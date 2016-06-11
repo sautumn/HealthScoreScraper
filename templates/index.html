@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Jefferson County Restaurant Health Scores</title>
+
+    <script   
+    src="https://code.jquery.com/jquery-2.2.3.min.js"   
+    integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+    crossorigin="anonymous">
+    </script>
+
+
+</head>
+ 
+
+<body>
+
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1>Jefferson County Restaurant Health Scores</h1> 
+    <p>Data scraped from Jefferson County Health Department <a href = "http://www.jcdh.org/EH/FnL/FnL03.aspx">webpage</a>.</p> 
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="/static/javascript.js"></script>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            Sort by...
+                <select id = "types">
+                    <option value="name" class="dropdown-item">name</option>
+                    <option value="score" class="dropdown-item">score</option>
+                </select>
+        
+                <input type="radio" name="sort" value="ascending">Name A-Z / Lowest Score to Highest Score
+                <input type="radio" name="sort" value="descending">Name Z-A / Highest Score to Lowest Score
+
+                <select id ="placeTypes">
+                    <option value="Food Service Establishment" class="dropdown-item">Food Service Establishment</option>
+                    <option value="Day Care Center" class="dropdown-item">Day Care Center</option>
+                    <option value="Limited Food Service" class="dropdown-item">Limited Food Service</option>
+                    <option value="Bars and Lounges" class="dropdown-item">Bars and Lounges</option>
+                    <option value="Limited Retail Food Store" class="dropdown-item">Limited Retail Food Store</option>
+                    <option value="Public School Lunchroom" class="dropdown-item">Public School Lunchroom</option>
+                    <option value="Jails and Prisons Lunchrooms" class="dropdown-item">Jails and Prisons Lunchrooms</option>
+                    <option value="Retail Food Store" class="dropdown-item">Retail Food Store</option>
+                    <option value="Limited Retail Food Store" class="dropdown-item">Limited Retail Food Store</option>
+                    <option value="Mobile Food Vendor" class="dropdown-item">Mobile Food Vendor</option>
+                    <option value="Ballpark Concession Stands" class="dropdown-item">Ballpark Concession Stands</option>
+                    <option value="Charitable Non-Permitted Food Establishment" class="dropdown-item">Charitable Non-Permitted Food Establishment</option>
+                    <option value="Hospital Kitchen" class="dropdown-item">Hospital Kitchen</option>
+                    <option value="Nursing Home Kitchen" class="dropdown-item">Nursing Home Kitchen</option>
+                    <option value="Private School Lunchroom" class="dropdown-item">Private School Lunchroom</option>
+                    
+                </select>
+            </div>
+            <table class="table table-hover">
+            <tbody id="restaurants"></tbody>
+            </table>
+        <button id="backPage" class="btn btn-secondary">back</button>   
+        <button id="nextPage" class="btn btn-secondary">next</button>
+    </div>
+</body>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>
