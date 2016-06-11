@@ -1,0 +1,9 @@
+//TO DO
+//an actual search bar for user input
+//ability to sort by date
+//search within a radius
+//maybe display points on a map
+//fix the inconsistent case on database entries
+//turn radio buttons into a drop down menu
+//fix ux
+//allow scraper to scrape once a day

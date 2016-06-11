@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from string import ascii_uppercase
 import addtodb
-import asyncio
+
 
 url = "http://www.jcdh.org/EH/FnL/FnL03.aspx"
 
